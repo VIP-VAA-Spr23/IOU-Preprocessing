@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Shaan</folder>
+	<filename>12300187_0090.jpg</filename>
+	<path>/Users/shaanchanchani/Desktop/Images to Label/Shaan/12300187_0090.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>87</xmin>
+			<ymin>443</ymin>
+			<xmax>218</xmax>
+			<ymax>540</ymax>
+		</bndbox>
+	</object>
+</annotation>

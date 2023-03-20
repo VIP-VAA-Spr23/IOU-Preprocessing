@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Shaan</folder>
+	<filename>09220031_1530.jpg</filename>
+	<path>/Users/shaanchanchani/Desktop/Images to Label/Shaan/09220031_1530.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>988</xmin>
+			<ymin>361</ymin>
+			<xmax>1084</xmax>
+			<ymax>443</ymax>
+		</bndbox>
+	</object>
+</annotation>
