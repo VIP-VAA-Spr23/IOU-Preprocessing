@@ -114,10 +114,25 @@ def iOU(localizer, ground_truth):
 
     df = pd.DataFrame(iou_matrix.numpy(), index=ground_names, columns=local_names)
 
-    print(df)
-
     return df
   
+def groundT_localizer_matches(IoU):
+
+    groundT_pred_matches = []
+    
+    for index, row in IoU.iterrows():
+        
+        max_IoU = 0
+
+        for col, value in row.items():
+
+            if value > max_IoU:
+                max_IoU = value
+            
+        groundT_pred_matches.append((index, col, value))
+    
+    return groundT_pred_matches
+
 
 def main():
     #Ground truth dictionary {'filename':[(xmin1,ymin1,xmax1,ymax1),(xmin2,ymin2,xmax2,ymax2),...]}
@@ -164,6 +179,10 @@ def main():
         matrix = iOU(lBox, gtBox)
         iou_mat_list.append(matrix)
 
+    best_bounding = []
+
+    for i in range(len(iou_mat_list)):
+        best_bounding.append(groundT_localizer_matches(iou_mat_list[i]))
 
     # pdb.set_trace()
     
