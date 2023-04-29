@@ -22,6 +22,21 @@
 
 - argparse library: The argparse library provides a way to parse command-line arguments in Python. It is used in the main.py script to parse arguments for the script.
 
+## Folders:
+
+1. Check Files -> Original Images Used for Drawing Bounding Boxes on 
+2. Images to Label -> Images labeled by each Group Member 
+3. Labeled Files -> XML files with bounding box recordings for the ground truth 
+4. outputs_csv -> localization results folders
+5. Marked Images -> Images with bounding boxes of ground truth and localizer
+
+## Using the Project: 
+
+1. Put your ground truth xml files in the folder 'Labeled Files'
+2. Put your localizer csv results in the folder 'outputs_csv'
+3. Put your unmodified image set in check files 
+4. Run the main.py script to produce 3 dictionaries of false positive detections and draw bounding boxes on the images
+
 ## main.py -> Main Script Execution
 
 Calls all of the image analysis scripts in the following order:
